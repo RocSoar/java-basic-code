@@ -1,21 +1,45 @@
 package com.roc.test;
 
 public class Student {
-    public String name;
+    private int id;
+    private String name;
+    private int age;
 
     public Student() {
-        System.out.println("空参构造");
     }
 
-    public Student(String name) {
+    public Student(int id, String name, int age) {
+        this.id = id;
         this.name = name;
+        this.age = age;
+    }
+
+    public void print() {
+        if (id != 0)
+            System.out.println("id: " + id + ", 姓名: " + name + ", 年龄: " + age);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getName() {
-        return name;
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
