@@ -1,9 +1,9 @@
-package com.roc.utils;
+package com.roc.stringdemo;
 
 import java.lang.reflect.Array;
 import java.util.Random;
 
-public class Utils {
+public class MyUtils {
     public static <T> void printArray(T[] arr) {
         System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
@@ -61,6 +61,27 @@ public class Utils {
         }
         result += "]";
         return result;
+    }
+
+    public static String stringReverser(String s) {
+        String result = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            result += s.charAt(i);
+        }
+
+        return result;
+    }
+
+    public static boolean isUpperChar(char c) {
+        return c >= 'A' && c <= 'Z';
+    }
+
+    public static boolean isLowerChar(char c) {
+        return c >= 'a' && c <= 'z';
+    }
+
+    public static boolean isNumChar(char c) {
+        return c >= '0' && c <= '9';
     }
 
     public static <T> T[] copyArray(T[] arr) {
@@ -164,6 +185,15 @@ public class Utils {
         newArr[arr.length] = target;
         for (int i = 0; i < arr.length; i++) {
             newArr[i] = arr[i];
+        }
+        return newArr;
+    }
+
+    public static int[] lappend(int[] arr, int target) {
+        int[] newArr = new int[arr.length + 1];
+        newArr[0] = target;
+        for (int i = 0; i < arr.length; i++) {
+            newArr[i + 1] = arr[i];
         }
         return newArr;
     }
