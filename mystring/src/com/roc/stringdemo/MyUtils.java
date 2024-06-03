@@ -52,15 +52,15 @@ public class MyUtils {
         if (arr == null)
             return "";
 
-        String result = "[";
+        StringBuilder result = new StringBuilder("[");
         for (int i = 0; i < arr.length; i++) {
             if (i == 0)
-                result += arr[i];
+                result.append(arr[i]);
             else
-                result += ", " + arr[i];
+                result.append(", ").append(arr[i]);
         }
-        result += "]";
-        return result;
+        result.append("]");
+        return result.toString();
     }
 
     public static String stringReverser(String s) {

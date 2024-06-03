@@ -19,6 +19,8 @@ public class Demo1 {
 //        CapitalConverter cc = new CapitalConverter();
 //        cc.run();
 
+        int[] a = new int[0];
+        System.out.println(MyUtils.arrayToString(a));
     }
 
 }
