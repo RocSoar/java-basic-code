@@ -1,5 +1,6 @@
 package com.roc.test;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -15,6 +16,10 @@ public class Test {
         int ccc = bar.stream().reduce((acc, e) -> acc + e).orElse(0);
         String m = foo.stream().filter(e -> e.length() == 3).findFirst().orElseGet(() -> "空");
         System.out.println(m);
-        
+
+    }
+
+    public void test() {
+        System.out.println(111);
     }
 }
