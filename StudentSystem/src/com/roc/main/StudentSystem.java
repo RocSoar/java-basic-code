@@ -3,22 +3,21 @@ package com.roc.main;
 import com.roc.data.Student;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class StudentSystem {
     private final ArrayList<Student> students = new ArrayList<>();
     private final Scanner sc = new Scanner(System.in);
-    
+
     public void run() {
+        loop:
         while (true) {
             System.out.println("\n-----------------欢迎来到学生管理系统-----------------------");
             System.out.println("1: 添加学生");
             System.out.println("2: 删除学生");
             System.out.println("3: 修改学生");
             System.out.println("4: 查询学生");
-            System.out.println("5: 退出系统");
+            System.out.println("5: 退出至登录页面");
             System.out.println("请输入你的选择: ");
             String choose = sc.next();
             try {
@@ -26,12 +25,12 @@ public class StudentSystem {
                     case "1" -> add();
                     case "2" -> delete();
                     case "3" -> update();
-                    case "4" -> displayAll();
+                    case "4" -> displayStudents();
                     case "5" -> {
                         System.out.println("bye~");
-                        System.exit(0);
+                        break loop;
                     }
-                    default -> System.out.println("没有这个选项");
+                    default -> System.out.println("没有这个选项!");
                 }
             } catch (Exception e) {
                 System.out.println("输入错误! 请重新输入!");
@@ -46,7 +45,7 @@ public class StudentSystem {
         while (true) {
             System.out.println("请输入学生id: ");
             id = sc.next();
-            if (!contains(id))
+            if (!containsStudent(id))
                 break;
             System.out.println("该学生ID已经存在, 请勿重复添加!\n");
         }
@@ -61,7 +60,7 @@ public class StudentSystem {
     }
 
     public boolean add(Student stu) {
-        if (contains(stu.getId()))
+        if (containsStudent(stu.getId()))
             return false;
         students.add(stu);
         return true;
@@ -79,7 +78,7 @@ public class StudentSystem {
     public void update() {
         System.out.println("请输入要修改的学生ID: ");
         String id = sc.next();
-        if (contains(id)) {
+        if (containsStudent(id)) {
             System.out.println("请输入修改后的学生姓名: ");
             String name = sc.next();
             System.out.println("请输入修改后的学生年龄: ");
@@ -104,7 +103,7 @@ public class StudentSystem {
         return students.stream().map(s -> s.getName()).toList();
     }*/
 
-    public void displayAll() {
+    public void displayStudents() {
         if (students.isEmpty()) {
             System.out.println("当前无学生信息, 请添加后再查询.");
             return;
@@ -113,7 +112,7 @@ public class StudentSystem {
         students.forEach(s -> System.out.println(s.toStr()));
     }
 
-    private boolean contains(String id) {
+    private boolean containsStudent(String id) {
         return students.stream().anyMatch(s -> s.getId().equals(id));
     }
 
