@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/arrayList/arrayList.iml" filepath="$PROJECT_DIR$/arrayList/arrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/day01-code/day01-code.iml" filepath="$PROJECT_DIR$/day01-code/day01-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/mystring/mystring.iml" filepath="$PROJECT_DIR$/mystring/mystring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-advanced/oop-advanced.iml" filepath="$PROJECT_DIR$/oop-advanced/oop-advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-code/oop-code.iml" filepath="$PROJECT_DIR$/oop-code/oop-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/utilities/utilities.iml" filepath="$PROJECT_DIR$/utilities/utilities.iml" />
     </modules>
