@@ -11,6 +11,12 @@ public class App {
     private final ArrayList<User> users = new ArrayList<>();
     StudentSystem ss = new StudentSystem();
 
+    private static final String LOGIN = "1";
+    private static final String REGISTER = "2";
+    private static final String FORGET_PASSWORD = "3";
+    private static final String DISPLAY_USERS = "4";
+    private static final String EXIT = "5";
+
     public void run() {
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -24,11 +30,11 @@ public class App {
             String choose = sc.next();
             try {
                 switch (choose) {
-                    case "1" -> login();
-                    case "2" -> register();
-                    case "3" -> forgetPassword();
-                    case "4" -> displayUsers();
-                    case "5" -> {
+                    case LOGIN -> login();
+                    case REGISTER -> register();
+                    case FORGET_PASSWORD -> forgetPassword();
+                    case DISPLAY_USERS -> displayUsers();
+                    case EXIT -> {
                         System.out.println("bye~");
                         System.exit(0);
                     }

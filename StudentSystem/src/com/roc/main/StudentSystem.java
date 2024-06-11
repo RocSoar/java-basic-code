@@ -9,6 +9,12 @@ public class StudentSystem {
     private final ArrayList<Student> students = new ArrayList<>();
     private final Scanner sc = new Scanner(System.in);
 
+    private static final String ADD = "1";
+    private static final String DELETE = "2";
+    private static final String UPDATE = "3";
+    private static final String DISPLAY_STUDENTS = "4";
+    private static final String EXIT = "5";
+
     public void run() {
         loop:
         while (true) {
@@ -22,11 +28,11 @@ public class StudentSystem {
             String choose = sc.next();
             try {
                 switch (choose) {
-                    case "1" -> add();
-                    case "2" -> delete();
-                    case "3" -> update();
-                    case "4" -> displayStudents();
-                    case "5" -> {
+                    case ADD -> add();
+                    case DELETE -> delete();
+                    case UPDATE -> update();
+                    case DISPLAY_STUDENTS -> displayStudents();
+                    case EXIT -> {
                         System.out.println("bye~");
                         break loop;
                     }
