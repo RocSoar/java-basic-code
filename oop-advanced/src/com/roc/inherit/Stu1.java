@@ -5,6 +5,7 @@ public class Stu1 extends Student {
         System.out.println("Stu1的空参构造被调用了");
     }
 
+
     public void test() {
     }
 }

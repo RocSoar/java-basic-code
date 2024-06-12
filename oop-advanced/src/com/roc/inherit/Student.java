@@ -18,12 +18,10 @@ public class Student extends Person {
 
     @Override
     public String getName() {
+        System.out.println(123);
         return name;
     }
 
-    private void toStu() {
-
-    }
 
 //    @Override
 //    public void toPerson() {

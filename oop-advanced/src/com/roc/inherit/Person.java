@@ -1,6 +1,6 @@
 package com.roc.inherit;
 
-public class Person {
+public abstract class Person {
     private String name;
     private int age;
 
@@ -37,4 +37,11 @@ public class Person {
         System.out.println("年龄为" + getAge() + "的" + getName() + "养了一只" + color + "颜色的" + age + "岁的" + kind);
         animal.eat(sth);
     }
+
+    public void personTest() {
+        if (this instanceof Student)
+            System.out.println("是学生");
+    }
+
+    ;
 }
