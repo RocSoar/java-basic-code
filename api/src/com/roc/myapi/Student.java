@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student implements Cloneable {
-    private String name;
-    private int age;
-    private String gender;
+    private final String name;
+    private final int age;
+    private final String gender;
     int[] data = {1, 2, 3, 4, 5};
 
     public Student(String name, int age, String gender) {
@@ -29,7 +29,7 @@ public class Student implements Cloneable {
         if (this == o) return true;
         if (!(o instanceof Student student)) return false;
         return age == student.age && Objects.equals(name, student.name) && Objects.equals(gender,
-                student.gender);
+                student.gender) && Arrays.equals(data, student.data);
     }
 
     @Override
