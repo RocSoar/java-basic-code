@@ -11,10 +11,18 @@ public class RegexDemo4 {
 //        for (String string : split) {
 //            System.out.println(string);
 //        }
-        String str = "aaa123aaa";
-        String str2 = "&&abc&";
+//        String str = "a123a";
+//        System.out.println(str.matches("(.).*\\1"));
+//        String str = "abc123abc";
+//        System.out.println(str.matches("(.+).*\\1"));
+//        String str = "aaa123aaa";
+//        String str2 = "&&abc&";
+//        System.out.println(str.matches("((.)\\2*).*\\1"));
+//
+//        System.out.println(str.matches("((.)\\2+).*\\1"));
+//        System.out.println(str2.matches("(.)\\1*.*\\1"));
 
-        System.out.println(str.matches("((.)\\2+).*\\1"));
-        System.out.println(str2.matches("(.)\\1*.*\\1"));
+        String str = "我要学学编编编编程程程程程";
+        System.out.println(str.replaceAll("(.)\\1+", "$1"));
     }
 }
