@@ -8,7 +8,7 @@ public class MathDemo1 {
         List<Integer> list = new ArrayList<>();
         long start = System.currentTimeMillis();
         for (int i = 0; i < 500000; i++) {
-            if (isPrime1(i))
+            if (isPrime2(i))
                 list.add(i);
         }
         long end = System.currentTimeMillis();

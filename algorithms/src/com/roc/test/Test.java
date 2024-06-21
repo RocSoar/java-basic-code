@@ -2,6 +2,7 @@ package com.roc.test;
 
 import com.roc.sort.bubbleSort.BubbleSort;
 import com.roc.sort.insertSort.InsertSort;
+import com.roc.sort.quickSort.QuickSort;
 import com.roc.sort.selectionSort.SelectionSort;
 
 import java.util.Arrays;
@@ -26,10 +27,17 @@ public class Test {
         int[] insertSorted = InsertSort.insertSort(arr);
         long t6 = System.currentTimeMillis();
 
+        long t7 = System.currentTimeMillis();
+        int[] cloned = arr.clone();
+        QuickSort.quickSort(cloned, 0, cloned.length - 1);
+        long t8 = System.currentTimeMillis();
+
         System.out.println(Arrays.equals(bubbleSorted, selectionSorted));
         System.out.println(Arrays.equals(bubbleSorted, insertSorted));
-        System.out.println("冒泡排序用时: " + (t2 - t1) + "ms"); // 1671ms
-        System.out.println("选择排序用时: " + (t4 - t3) + "ms"); // 2799ms
-        System.out.println("插入排序用时: " + (t6 - t5) + "ms"); // 222ms
+        System.out.println(Arrays.equals(bubbleSorted, cloned));
+        System.out.println("冒泡排序用时: " + (t2 - t1) + "ms"); // win:1671ms  mac:1168ms
+        System.out.println("选择排序用时: " + (t4 - t3) + "ms"); // win:2799ms  mac:2661ms
+        System.out.println("插入排序用时: " + (t6 - t5) + "ms"); // win:222ms   mac:299ms
+        System.out.println("快速排序用时: " + (t8 - t7) + "ms"); // win:??ms   mac:5ms
     }
 }
