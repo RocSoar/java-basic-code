@@ -11,6 +11,7 @@ public class BubbleSort {
     }
 
     public static int[] bubbleSort(int[] arr) {
+//        最大的依次放右边  大量的交换元素 速度很慢
         int[] sorted = arr.clone();
         for (int i = sorted.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {

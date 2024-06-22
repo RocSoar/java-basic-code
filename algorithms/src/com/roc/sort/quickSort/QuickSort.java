@@ -9,7 +9,7 @@ public class QuickSort {
 //        int[] sorted = {1, 2, 3, 4, 5, 6};
 //        quickSort(arr, 0, arr.length - 1);
 //        System.out.println(Arrays.equals(arr, sorted));
-        int[] arr = new int[100000];
+        int[] arr = new int[10000000];
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = r.nextInt();
@@ -22,6 +22,7 @@ public class QuickSort {
     }
 
     public static void quickSort(int[] arr, int start, int end) {
+//        递归思想
         if (start >= end)
             return;
 
@@ -48,6 +49,6 @@ public class QuickSort {
         arr[left] = temp;
 
         quickSort(arr, start, right - 1);
-        quickSort(arr, left + 1, end);
+        quickSort(arr, right + 1, end);
     }
 }
