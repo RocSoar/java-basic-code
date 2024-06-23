@@ -64,12 +64,12 @@ public class Test {
         System.out.println(Arrays.equals(bubbleSorted, arr));
         System.out.println("冒泡排序用时: " + (t2 - t1) + "ms"); // win:1671ms  mac:1168ms
         System.out.println("选择排序用时: " + (t4 - t3) + "ms"); // win:2799ms  mac:2661ms
-        System.out.println("选择排序优化版用时: " + (t41 - t31) + "ms"); // win:592ms  mac:???ms
+        System.out.println("选择排序优化版用时: " + (t41 - t31) + "ms"); // win:592ms  mac:691ms
         System.out.println("插入排序用时: " + (t6 - t5) + "ms"); // win:222ms   mac:299ms
-        System.out.println("插入排序优化版用时: " + (t61 - t51) + "ms"); // win:129ms   mac:???ms
-        System.out.println("希尔排序用时: " + (t8 - t7) + "ms"); // win:8ms   mac:???ms
+        System.out.println("插入排序优化版用时: " + (t61 - t51) + "ms"); // win:129ms   mac:111ms
+        System.out.println("希尔排序用时: " + (t8 - t7) + "ms"); // win:8ms   mac:7ms
         System.out.println("快速排序用时: " + (t10 - t9) + "ms"); // win:7ms   mac:5ms
-        System.out.println("归并排序用时: " + (t12 - t11) + "ms"); // win:12ms   mac:???ms
-        System.out.println("Java自带排序用时: " + (t14 - t13) + "ms"); // win:17ms   mac:???ms
+        System.out.println("归并排序用时: " + (t12 - t11) + "ms"); // win:12ms   mac:8ms
+        System.out.println("Java自带排序用时: " + (t14 - t13) + "ms"); // win:17ms   mac:10ms
     }
 }

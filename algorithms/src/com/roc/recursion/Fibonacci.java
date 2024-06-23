@@ -2,12 +2,12 @@ package com.roc.recursion;
 
 public class Fibonacci {
     public static void main(String[] args) {
-//        long t1 = System.currentTimeMillis();
-//        int num = fibonacci(40);
-//        long t2 = System.currentTimeMillis();
+        long t1 = System.currentTimeMillis();
+        int num = fibonacci(40);
+        long t2 = System.currentTimeMillis();
 //
-//        System.out.println(num);
-//        System.out.println("耗时: " + (t2 - t1));
+        System.out.println(num);
+        System.out.println("耗时: " + (t2 - t1));
 //        int[] arr = new int[12];
 //        for (int i = 1; i <= 12; i++) {
 //            arr[i - 1] = fibonacci(i);
@@ -15,7 +15,7 @@ public class Fibonacci {
 //
 //        System.out.println(Arrays.toString(arr));
 //        System.out.println(eatPeach(7));
-        System.out.println(climbStair2(20));
+//        System.out.println(climbStair2(20));
     }
 
     public static int fibonacci(int n) {

@@ -20,7 +20,7 @@ public class SystemDemo1 {
         System.out.println(runtime.maxMemory() / 1024 / 1024);
         System.out.println(runtime.totalMemory() / 1024 / 1024);
         System.out.println(runtime.freeMemory() / 1024 / 1024);
-        runtime.exec("calc");
-        runtime.exec("shutdown -a");
+//        runtime.exec("calc");
+//        runtime.exec("shutdown -a");
     }
 }
