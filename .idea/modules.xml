@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/mystring/mystring.iml" filepath="$PROJECT_DIR$/mystring/mystring.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-advanced/oop-advanced.iml" filepath="$PROJECT_DIR$/oop-advanced/oop-advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-code/oop-code.iml" filepath="$PROJECT_DIR$/oop-code/oop-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practices/practices.iml" filepath="$PROJECT_DIR$/practices/practices.iml" />
       <module fileurl="file://$PROJECT_DIR$/utilities/utilities.iml" filepath="$PROJECT_DIR$/utilities/utilities.iml" />
     </modules>
   </component>
