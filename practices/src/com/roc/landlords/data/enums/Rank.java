@@ -1,4 +1,4 @@
-package com.roc.landlords.enums;
+package com.roc.landlords.data.enums;
 
 public enum Rank {
     Three,
