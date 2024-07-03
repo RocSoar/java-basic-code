@@ -37,13 +37,14 @@ public class CollectionDemo {
         Map.Entry[] arr = new Map.Entry[6];
         Map.Entry[] array = map.entrySet().toArray(arr);
         Map<String, Integer> m = Map.ofEntries(map.entrySet().toArray(new Map.Entry[0]));
+        Map<String, Integer> m2 = Map.ofEntries(map.entrySet().toArray(Map.Entry[]::new));
 //        for (Map.Entry entry : arr) {
 //            System.out.println(entry);
 //        }
 //        System.out.println(arr == array);
-        Map<String, Integer> map1 = Map.copyOf(m);
+        Map<String, Integer> map1 = Map.copyOf(m2);
 
         map1.entrySet().forEach(e -> System.out.println(e));
-        System.out.println(map1 == m);
+        System.out.println(map1 == m2);
     }
 }
