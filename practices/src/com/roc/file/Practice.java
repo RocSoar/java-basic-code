@@ -15,7 +15,7 @@ public class Practice {
         String name2 = "b.avi";
         String name3 = "src";
 
-        File d = new File(path2);
+        File d = new File(path);
 
         File txtF = new File(d, name);
         File aviF = new File(d, name2);
