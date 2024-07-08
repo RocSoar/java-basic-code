@@ -116,7 +116,6 @@ public class Utils {
         return false;
     }
 
-
     public static boolean contains(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
@@ -299,7 +298,6 @@ public class Utils {
         return choice == 0 ?
                 (char) (r.nextInt(91 - 65) + 65)
                 : (char) (r.nextInt(123 - 97) + 97);
-
     }
 
     public static char getRandomChar2() {
@@ -314,7 +312,6 @@ public class Utils {
         int randomIndex = r.nextInt(chars.length);
 
         return chars[randomIndex];
-
     }
 
     public static int reverseNumber(int num) {
