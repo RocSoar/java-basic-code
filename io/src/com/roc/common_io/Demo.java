@@ -1,6 +1,6 @@
 package com.roc.common_io;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,6 +14,6 @@ public class Demo {
         File f1 = new File("io/image");
         File f2 = new File("io/image2");
 //        FileUtils.copyDirectory(f1, f2);
-        FileUtils.copyDirectoryToDirectory(f1, f2);
+//        FileUtils.copyDirectoryToDirectory(f1, f2);
     }
 }

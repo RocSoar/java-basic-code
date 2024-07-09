@@ -14,12 +14,13 @@ public class RegexDemo2 {
 
         String regex2 = "((?i)Java)(8|14|17)";
         String regex3 = "((?i)Java)(?:8|14|17)";
-        
+        String regex31 = "(?:JavA)(8|14|21)";
+
         String regex4 = "((?i)Java)(?!8|14|17)";
         String regex5 = "ab+";
         String regex6 = "ab+?";
 
-        Pattern p = Pattern.compile(regex6);
+        Pattern p = Pattern.compile(regex31);
         Matcher m = p.matcher(str);
         while (m.find()) {
             System.out.println(m.group());
