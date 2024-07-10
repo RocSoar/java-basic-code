@@ -3,7 +3,9 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-*.mp4
+io/aaa
+io/image
+io/lib
 
 ### Eclipse ###
 .apt_generated
