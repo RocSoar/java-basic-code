@@ -18,14 +18,11 @@ public class Demo1 {
 //            System.out.println(Thread.currentThread().getName() + "---->" + i);
 //        }
 
-//        MyRunnable mr = new MyRunnable();
-//        Thread t1 = new Thread(mr);
-//        t1.setName("线程1");
-//        Thread t2 = new Thread(mr);
-//        t2.setName("线程2");
-//
-//        t1.start();
-//        t2.start();
+        MyRunnable mr = new MyRunnable();
+        Thread t1 = new Thread(mr, "线程1");
+        Thread t2 = new Thread(mr, "线程2");
+        t1.start();
+        t2.start();
 
 //        MyCallable mc = new MyCallable();
 //        FutureTask<Integer> ft = new FutureTask<>(mc);
@@ -34,11 +31,11 @@ public class Demo1 {
 //        Integer result = ft.get();
 //        System.out.println(result);
 
-        ThreadLock tl1 = new ThreadLock("线程1");
-        ThreadLock tl2 = new ThreadLock("线程2");
-        ThreadLock tl3 = new ThreadLock("线程3");
-        tl1.start();
-        tl2.start();
-        tl3.start();
+//        ThreadLock tl1 = new ThreadLock("线程1");
+//        ThreadLock tl2 = new ThreadLock("线程2");
+//        ThreadLock tl3 = new ThreadLock("线程3");
+//        tl1.start();
+//        tl2.start();
+//        tl3.start();
     }
 }

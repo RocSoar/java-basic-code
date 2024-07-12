@@ -14,7 +14,7 @@ public class ThreadLock extends Thread {
     @Override
     public void run() {
         while (true) {
-            synchronized (lock) {
+            synchronized (ThreadLock.class) {
                 if (count >= 100)
                     break;
                 System.out.println(getName() + "---->" + count++);
