@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/oop-advanced/oop-advanced.iml" filepath="$PROJECT_DIR$/oop-advanced/oop-advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-code/oop-code.iml" filepath="$PROJECT_DIR$/oop-code/oop-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/practices/practices.iml" filepath="$PROJECT_DIR$/practices/practices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/utilities/utilities.iml" filepath="$PROJECT_DIR$/utilities/utilities.iml" />
     </modules>
   </component>

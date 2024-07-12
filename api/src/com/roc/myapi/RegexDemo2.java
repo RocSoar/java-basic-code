@@ -21,8 +21,8 @@ public class RegexDemo2 {
         String regex6 = "ab+?";
         String regex7 = "ab*?";
 
-        Pattern p = Pattern.compile(regex5);
-        Matcher m = p.matcher("abbbbbbbb");
+        Pattern p = Pattern.compile(regex1);
+        Matcher m = p.matcher(str);
         while (m.find()) {
             System.out.println(m.group());
         }
