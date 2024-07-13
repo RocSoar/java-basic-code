@@ -441,7 +441,7 @@ EXTRACTS.
 
   “Scarcely had we proceeded two days on the sea, when about sunrise a
   great many Whales and other monsters of the sea, appeared. Among the
-  former, one was of a most monstrous size.... This came towards us,
+  former, one was of a most monstrous length.... This came towards us,
   open-mouthed, raising the waves on all sides, and beating the sea
   before him into a foam.” —_Tooke’s Lucian_. “_The True History_.”
 
@@ -5910,7 +5910,7 @@ loud sonorous breathing, or rather blowing, has furnished a proverb to
 landsmen, is so well known a denizen of the deep, yet is he not
 popularly classed among whales. But possessing all the grand
 distinctive features of the leviathan, most naturalists have recognised
-him for one. He is of moderate octavo size, varying from fifteen to
+him for one. He is of moderate octavo length, varying from fifteen to
 twenty-five feet in length, and of corresponding dimensions round the
 waist. He swims in herds; he is never regularly hunted, though his oil
 is considerable in quantity, and pretty good for light. By some
@@ -6966,7 +6966,7 @@ dismemberer. Now, then, be the prophet and the fulfiller one. That’s
 more than ye, ye great gods, ever were. I laugh and hoot at ye, ye
 cricket-players, ye pugilists, ye deaf Burkes and blinded Bendigoes! I
 will not say as schoolboys do to bullies—Take some one of your own
-size; don’t pommel _me!_ No, ye’ve knocked me down, and I am up again;
+length; don’t pommel _me!_ No, ye’ve knocked me down, and I am up again;
 but _ye_ have run and hidden. Come forth from behind your cotton bags!
 I have no long gun to reach ye. Come, Ahab’s compliments to ye; come
 and see if ye can swerve me. Swerve me? ye cannot swerve me, else ye
@@ -11200,7 +11200,7 @@ again carried forward the entire length of the boat, resting crosswise
 upon the loom or handle of every man’s oar, so that it jogs against his
 wrist in rowing; and also passing between the men, as they alternately
 sit at the opposite gunwales, to the leaded chocks or grooves in the
-extreme pointed prow of the boat, where a wooden pin or skewer the size
+extreme pointed prow of the boat, where a wooden pin or skewer the length
 of a common quill, prevents it from slipping out. From the chocks it
 hangs in a slight festoon over the bows, and is then passed inside the
 boat again; and some ten or twenty fathoms (called box-line) being
@@ -11899,7 +11899,7 @@ prices there. Also, that in Henry VIIIth’s time, a certain cook of the
 court obtained a handsome reward for inventing an admirable sauce to be
 eaten with barbacued porpoises, which, you remember, are a species of
 whale. Porpoises, indeed, are to this day considered fine eating. The
-meat is made into balls about the size of billiard balls, and being
+meat is made into balls about the length of billiard balls, and being
 well seasoned and spiced might be taken for turtle-balls or veal balls.
 The old monks of Dunfermline were very fond of them. They had a great
 porpoise grant from the crown.
@@ -13738,7 +13738,7 @@ Apply this spinal branch of phrenology to the Sperm Whale. His cranial
 cavity is continuous with the first neck-vertebra; and in that vertebra
 the bottom of the spinal canal will measure ten inches across, being
 eight in height, and of a triangular figure with the base downwards. As
-it passes through the remaining vertebræ the canal tapers in size, but
+it passes through the remaining vertebræ the canal tapers in length, but
 for a considerable distance remains of large capacity. Now, of course,
 this canal is filled with much the same strangely fibrous substance—the
 spinal cord—as the brain; and directly communicates with the brain. And
@@ -14062,7 +14062,7 @@ blind eyes, he must die the death and be murdered, in order to light
 the gay bridals and other merry-makings of men, and also to illuminate
 the solemn churches that preach unconditional inoffensiveness by all to
 all. Still rolling in his blood, at last he partially disclosed a
-strangely discoloured bunch or protuberance, the size of a bushel, low
+strangely discoloured bunch or protuberance, the length of a bushel, low
 down on the flank.
 
 “A nice spot,” cried Flask; “just let me prick him there once.”
@@ -15057,7 +15057,7 @@ calmly cooling himself with his own fan-like extremity.
 
 All whaleboats carry certain curious contrivances, originally invented
 by the Nantucket Indians, called druggs. Two thick squares of wood of
-equal size are stoutly clenched together, so that they cross each
+equal length are stoutly clenched together, so that they cross each
 other’s grain at right angles; a line of considerable length is then
 attached to the middle of this block, and the other end of the line
 being looped, it can in a moment be fastened to a harpoon. It is
@@ -16287,7 +16287,7 @@ Nippers. Strictly this word is not indigenous to the whale’s
 vocabulary. But as applied by whalemen, it becomes so. A whaleman’s
 nipper is a short firm strip of tendinous stuff cut from the tapering
 part of Leviathan’s tail: it averages an inch in thickness, and for the
-rest, is about the size of the iron part of a hoe. Edgewise moved along
+rest, is about the length of the iron part of a hoe. Edgewise moved along
 the oily deck, it operates like a leathern squilgee; and by nameless
 blandishments, as of magic, allures along with it all impurities.
 
@@ -17451,7 +17451,7 @@ have what the proprietors call “the only perfect specimen of a
 Greenland or River Whale in the United States.” Moreover, at a place in
 Yorkshire, England, Burton Constable by name, a certain Sir Clifford
 Constable has in his possession the skeleton of a Sperm Whale, but of
-moderate size, by no means of the full-grown magnitude of my friend
+moderate length, by no means of the full-grown magnitude of my friend
 King Tranquo’s.
 
 In both cases, the stranded whales to which these two skeletons
@@ -17692,7 +17692,7 @@ of the whale, in his own osseous post-diluvian reality, as set down by
 the venerable John Leo, the old Barbary traveller.
 
 “Not far from the Sea-side, they have a Temple, the Rafters and Beams
-of which are made of Whale-Bones; for Whales of a monstrous size are
+of which are made of Whale-Bones; for Whales of a monstrous length are
 oftentimes cast up dead upon that shore. The Common People imagine,
 that by a secret Power bestowed by God upon the Temple, no Whale can
 pass it without immediate death. But the truth of the Matter is, that
@@ -17721,7 +17721,7 @@ But upon investigation we find, that not only are the whales of the
 present day superior in magnitude to those whose fossil remains are
 found in the Tertiary system (embracing a distinct geological period
 prior to man), but of the whales found in that Tertiary system, those
-belonging to its latter formations exceed in size those of its earlier
+belonging to its latter formations exceed in length those of its earlier
 ones.
 
 Of all the pre-adamite whales yet exhumed, by far the largest is the
