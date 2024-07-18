@@ -6,8 +6,12 @@ import java.nio.charset.StandardCharsets;
 
 public class Demo1 {
     public static void main(String[] args) throws IOException {
-//        InputStreamReader isr = new InputStreamReader(new FileInputStream("io/gbkfile.txt"), "gb18030");
-//
+        InputStreamReader isr = new InputStreamReader(new FileInputStream("io/gbkfile.txt"), "gb18030");
+        char[] buffer = new char[1024];
+        int len;
+        while ((len = isr.read(buffer)) != -1) {
+            System.out.println(new String(buffer, 0, len));
+        }
 
 //        FileWriter fw = new FileWriter("io/gbk.txt", Charset.forName("GBK"));
 //        fw.write("你好");
