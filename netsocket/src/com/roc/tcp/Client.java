@@ -15,6 +15,9 @@ public class Client {
         OutputStream os = socket.getOutputStream();
         os.write("你好!".getBytes(StandardCharsets.UTF_8));
         os.write("哈哈哈rocsoar".getBytes(StandardCharsets.UTF_8));
+        os.write("这残暴的欢愉, 终将以残暴结束".getBytes(StandardCharsets.UTF_8));
+
+        socket.shutdownOutput(); //在输出流中添加EOF结束标记
 
         os.close();
         socket.close();
