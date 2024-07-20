@@ -98,8 +98,9 @@ public class Client {
     }
 
     private void talkToAll() throws IOException {
-//        开启一条新线程来监听其他人发送的消息
+//        开启一条新线程来不停监听其他人发送的消息
         pool.submit(new ClientRunnable(socket));
+//        向服务器发送消息
         while (true) {
             System.out.println("请输入你想说的话:");
             sendMsgToServer(sc.nextLine());

@@ -21,6 +21,7 @@ public class Server {
     }
 
     public void run() throws IOException {
+        //只要来了一个客户端，就开一条线程处理
         while (true)
             pool.submit(new ServerRunnable(ss.accept()));
     }
