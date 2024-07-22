@@ -4,8 +4,18 @@ public class Student {
     public String name;
     private int age;
     private String gender;
+    private double height;
+    private String hobby;
 
     public Student() {
+    }
+
+    public Student(String name, int age, String gender, double height, String hobby) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.height = height;
+        this.hobby = hobby;
     }
 
     public Student(String name, int age) {

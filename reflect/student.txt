@@ -1,0 +1,5 @@
+name=roc
+age=28
+gender=男
+height=180.0
+hobby=学习
