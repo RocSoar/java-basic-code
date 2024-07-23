@@ -26,7 +26,7 @@ public class Test {
 
         Function<Integer, List<Integer>> proxy = pf.createProxy(func, HandlerType.TIMING, HandlerType.LOGGING);
         List<Integer> res = proxy.apply(1000);
-        System.out.println(res);
+//        System.out.println(res);
 
 //        MyService<String> myService = new MyServiceImpl();
 //        MyService<String> proxy = pf.createProxy(myService, HandlerType.LOGGING, HandlerType.TIMING);
