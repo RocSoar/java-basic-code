@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class DoubleColorBall {
     public static void main(String[] args) {
-        runLottery(1000);
+        runLottery(10);
 
 //        int[] arr = generateBall2(6, 1, 33, 16);
 //        Utils.printArray(arr);
@@ -19,6 +19,7 @@ public class DoubleColorBall {
 
     public static void runLottery(int count) {
         int[] systemBall = generateBall(6, 1, 1, 33, 1, 16);
+        Utils.printArray(systemBall);
         int[] prizeArray = new int[7];
         for (int i = 0; i < count; i++) {
             int[] userBall = generateBall(6, 1, 1, 33, 1, 16);
