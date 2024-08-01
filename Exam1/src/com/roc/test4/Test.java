@@ -20,6 +20,7 @@ public class Test {
         ml.forEach(e -> System.out.println(e));
         System.out.println(ml.length());
         System.out.println(ml.capacity());
+        System.out.println(ml);
 //        System.out.println(s);
     }
 }

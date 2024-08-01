@@ -2,6 +2,7 @@ package com.roc.test4;
 
 import java.util.Arrays;
 import java.util.Objects;
+import java.util.StringJoiner;
 
 public class MyArrayList<T> {
     private int index;
@@ -85,8 +86,18 @@ public class MyArrayList<T> {
     }
 
     public void forEach(Consumer<T> action) {
+        Objects.requireNonNull(action);
         for (int i = 0; i < index; i++)
             action.accept((T) data[i]);
+    }
+
+    @Override
+    public String toString() {
+        StringJoiner sj = new StringJoiner(", ", "[", "]");
+        for (int i = 0; i < index; i++)
+            sj.add(data[i] == null ? "null" : data[i].toString());
+
+        return sj.toString();
     }
 }
 
