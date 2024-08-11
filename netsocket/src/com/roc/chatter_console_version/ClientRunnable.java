@@ -16,8 +16,12 @@ public class ClientRunnable implements Runnable {
 //        监听其他人发送的消息 并打印
         try {
             br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            while (true)
-                System.out.println(br.readLine());
+            while (true) {
+                String msg = br.readLine();
+                if (msg == null)
+                    continue;
+                System.out.println(msg);
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

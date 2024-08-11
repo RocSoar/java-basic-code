@@ -24,6 +24,7 @@ public class ProxyFactory {
     @SuppressWarnings("unchecked")
     public <T> T createProxy(T target, HandlerType handlerType) {
         InvocationHandler handler = switch (handlerType) {
+            // TODO: more handler
             case TIMING -> new TimingInvocationHandler(target);
             case LOGGING -> new LoggingInvocationHandler(target);
         };

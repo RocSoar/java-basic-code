@@ -103,7 +103,14 @@ public class Client {
 //        向服务器发送消息
         while (true) {
             System.out.println("请输入你想说的话:");
-            sendMsgToServer(sc.nextLine());
+            String msg = sc.nextLine();
+            sendMsgToServer(msg);
+            if (msg.equals("exit")) {
+                br.close();
+                bw.close();
+                socket.close();
+                System.exit(0);
+            }
         }
     }
 

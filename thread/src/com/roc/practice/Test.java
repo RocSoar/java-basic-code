@@ -11,7 +11,7 @@ public class Test {
 //        mt2.start();
 
 //        MyRunnable mr = new MyRunnable();
-
+//
 //        Thread t1 = new Thread(mr, "线程1");
 //        Thread t2 = new Thread(mr, "线程2");
 //        t1.start();

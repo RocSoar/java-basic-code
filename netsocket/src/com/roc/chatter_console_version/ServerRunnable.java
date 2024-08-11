@@ -34,7 +34,7 @@ public class ServerRunnable implements Runnable {
 
     public ServerRunnable(Socket socket) throws IOException {
         synchronized (ServerRunnable.class) {
-            System.out.println("客户端" + ++count + "已连接");
+            System.out.println("客户端" + ++count + " " + socket.getRemoteSocketAddress() + " 已连接");
             id = count;
         }
         this.socket = socket;
@@ -58,9 +58,9 @@ public class ServerRunnable implements Runnable {
     }
 
     private void login() throws IOException {
-        System.out.println("客户端" + id + "请求登录");
+        System.out.println("客户端" + id + " " + socket.getRemoteSocketAddress() + " 请求 [登录]");
         String data = br.readLine();
-        System.out.println("客户端" + id + "发送了数据 ---> " + data);
+        System.out.println("客户端" + id + " " + socket.getRemoteSocketAddress() + " 发送了数据 ---> " + data);
         String[] userInfo = data.split("=");
         if (userInfo.length != 2) {
             // 用户名或密码格式不正确
@@ -80,7 +80,7 @@ public class ServerRunnable implements Runnable {
             System.out.println("用户 " + name + " 已登录");
             sendMsgToClient("1");
             username = name;
-            
+
             socketLock.lock();
             try {
                 socketList.add(socket);
@@ -92,9 +92,9 @@ public class ServerRunnable implements Runnable {
     }
 
     private void register() throws IOException {
-        System.out.println("客户端" + id + "请求注册");
+        System.out.println("客户端" + id + " " + socket.getRemoteSocketAddress() + " 请求 [注册]");
         String data = br.readLine();
-        System.out.println("客户端" + id + "发送了数据 ---> " + data);
+        System.out.println("客户端" + id + " " + socket.getRemoteSocketAddress() + " 发送了数据 ---> " + data);
         String[] userInfo = data.split("=");
         if (userInfo.length != 2) {
             // 用户名或密码格式不正确
@@ -137,6 +137,8 @@ public class ServerRunnable implements Runnable {
         while (true) {
 //            监听该客户端发送的消息
             String msg = br.readLine();
+            if (msg == null)
+                continue;
             System.out.println(username + "说: " + msg);
             socketLock.lock();
             try {
@@ -147,10 +149,18 @@ public class ServerRunnable implements Runnable {
                     bw.newLine();
                     bw.flush();
                 }
+                if (msg.equals("exit")) {
+                    System.out.println("用户 " + username + " [客户端" + id + " " + socket.getRemoteSocketAddress() + "] 已下线");
+                    socketList.remove(socket);
+                    break;
+                }
             } finally {
                 socketLock.unlock();
             }
         }
+        br.close();
+        bw.close();
+        socket.close();
     }
 
     //    用户名与密码校验

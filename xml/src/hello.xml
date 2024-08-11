@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<users>
+    <user id="1">
+        <name>roc</name>
+        <gender>male</gender>
+        <address>泰安</address>
+        <data>2 &lt; 3 &amp;&amp; 5 > 4</data>
+        <data2>
+            <![CDATA[
+              2 < 3 && 5 > 4
+            ]]>
+        </data2>
+    </user>
+    <user id="2">
+        <name>soar</name>
+        <gender>男</gender>
+        <address>泰安</address>
+        <data>2 &lt;3 &amp;&amp; 5 &gt; 4</data>
+    </user>
+</users>

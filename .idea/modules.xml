@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Annotation/Annotation.iml" filepath="$PROJECT_DIR$/Annotation/Annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exam1/Exam1.iml" filepath="$PROJECT_DIR$/Exam1/Exam1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exam2/Exam2.iml" filepath="$PROJECT_DIR$/Exam2/Exam2.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudentSystem/StudentSystem.iml" filepath="$PROJECT_DIR$/StudentSystem/StudentSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
@@ -10,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/day01-code/day01-code.iml" filepath="$PROJECT_DIR$/day01-code/day01-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/io/io.iml" filepath="$PROJECT_DIR$/io/io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jUnit/jUnit.iml" filepath="$PROJECT_DIR$/jUnit/jUnit.iml" />
       <module fileurl="file://$PROJECT_DIR$/map/map.iml" filepath="$PROJECT_DIR$/map/map.iml" />
       <module fileurl="file://$PROJECT_DIR$/mystring/mystring.iml" filepath="$PROJECT_DIR$/mystring/mystring.iml" />
       <module fileurl="file://$PROJECT_DIR$/netsocket/netsocket.iml" filepath="$PROJECT_DIR$/netsocket/netsocket.iml" />
@@ -20,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/second/second.iml" filepath="$PROJECT_DIR$/second/second.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/utilities/utilities.iml" filepath="$PROJECT_DIR$/utilities/utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml/xml.iml" filepath="$PROJECT_DIR$/xml/xml.iml" />
     </modules>
   </component>
 </project>
